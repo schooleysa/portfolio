@@ -56,16 +56,30 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 .title h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 40px;
+    margin-top: 200px;
+}
+
+h1 span {
+    font-size: 1.6rem;
+    color: #11d0b7;
+    font-weight: 300;
 }
 
 .title h2 {
     margin-bottom: 80px;
-    margin-top: 0
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.tags {
+    color: #11d0b7;
+    font-weight: 300;
 }
 
 .title h3 {
@@ -83,7 +97,7 @@ a {
 }
 
 .skillList span {
-    color: #ed6147;
+    color: #dc78dc;
 }
 
 .title p:nth-of-type(1) {
@@ -94,34 +108,37 @@ a {
     text-decoration: underline;    
 }
 
+.alternatingText {
+    margin-bottom: 0;
+}
 
 .alternatingText-word {
     opacity: 0;
     position: absolute;
 }
 
-.alternatingText-word:nth-of-type(1) {
+.alternatingText-word:nth-of-type(2) {
     animation-name: rotate;
     animation-duration: 1.5s;
     animation-delay: 6s;
     color: #11d0b7;
   }
   
-  .alternatingText-word:nth-of-type(2) {
+  .alternatingText-word:nth-of-type(3) {
     animation-name: rotate;
     animation-duration: 1.5s;
     animation-delay: 7.5s;
     color: #dc78dc;
   }
   
-  .alternatingText-word:nth-of-type(3) {
+  .alternatingText-word:nth-of-type(4) {
     animation-name: rotate;
     animation-duration: 1.5s;
     animation-delay: 9s;
     color: #dfeb7a;
   }
   
-  .alternatingText-word:nth-of-type(4) {
+  .alternatingText-word:nth-of-type(5) {
     animation-name: rotate-final;
     animation-duration: 1.5s;
     animation-delay: 10.5s;
@@ -233,8 +250,78 @@ a {
 
 .about1,
 .about2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
     padding: 0 20px;
+}
+
+.about1 img{
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about1 img:hover{
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.about2 {
+    margin-bottom: 100px;
 }
 
 .skills h2 {
