@@ -213,7 +213,7 @@ h1 span {
 }
 
 .bodyWrapper{
-    max-width: 1400;
+    max-width: 1200;
     margin: 0 auto;
     width: 90%;
 }
@@ -259,13 +259,15 @@ h1 span {
 
 .about1 img{
     width: 100%;
-    max-width: 240px;
+    max-width: 275px;
     height: auto;
     margin: auto;
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 7px 7px #dfeb7a, 
+    14px 14px #11d0b7;
 }
 
 .about1 img:hover{
@@ -289,7 +291,7 @@ h1 span {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 700px;
 }
 
@@ -329,11 +331,73 @@ h1 span {
     font-size: 2rem;
 }
 
+button {
+    width: 25%;
+    border: none;
+    font-size: 0.7rem;
+    color: #2a2a2a;
+    font-weight: lighter;
+    padding: 10px 15px;
+}
+
+.about2 button {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+    width: 30%;
+    padding: 20px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: -7px -7px #dfeb7a, 
+    -14px -14px #11d0b7;
+}
+
+.about2 button:hover {
+    margin-top: 40px;
+    color: white;
+    background-color: #11d0b7;
+} 
+
 .skills span {
     color: #ed6147;
     font-size: 1.8;
 }
 
+.skillImgs {
+    display: flex;
+    max-width: 75%;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillImgs span {
+    text-transform: lowercase;
+}
+
+i {
+    font-size: 50px;
+    height: auto;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.skillImgs p {
+    text-align: center;
+}
+
+.now {
+    color: #dc78dc;  
+}
 
 .projects h2 {
     color: #11d0b7;
@@ -350,7 +414,7 @@ h1 span {
     width: 50%;
 }
 
-.projectButtons button{
+button {
     width: 25%;
     border: none;
     font-family: 'Raleway', sans-serif;
