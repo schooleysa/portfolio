@@ -1,12 +1,5 @@
 const portfolio = {};
 
-portfolio.scroll = () => {
-    ScrollReveal().reveal('.about')
-    ScrollReveal().reveal('.skills')
-    ScrollReveal().reveal('.projects')
-    ScrollReveal().reveal('.contact')  
-}
-
 portfolio.scrollTo = () => {
     const titleAboutMe = document.querySelector(".titleAboutMe");
     const titleMySkills = document.querySelector(".titleMySkills");
@@ -91,7 +84,6 @@ portfolio.aboutMeModal = () => {
 
 portfolio.init = () => {   
     portfolio.aboutMeModal();
-    portfolio.scroll();
     portfolio.scrollTo();
     portfolio.projectButtons()
 }
