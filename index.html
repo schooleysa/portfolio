@@ -36,14 +36,14 @@
                     </div>
                 </div>
                 <div class="title">
-                    <h1>Welcome</h1>
+                    <h1><span>&lt;Title&gt;</span>Welcome<span>&lt;/Title&gt;</span></h1>
                     <h2>
                         <p class="alternatingText">
-                            I am a <br>
-                            <span class="alternatingText-word word1"> Creator</span>
-                            <span class="alternatingText-word word2"> Musician</span>
-                            <span class="alternatingText-word word3"> DJ</span>
-                            <span class="alternatingText-word word4"> Front-End Web Developer</span>
+                            <span class="tags">&lt;H1&gt;</span>I am a <br>
+                            <span class="alternatingText-word word1"> Creator<span class="tags">&lt;/H1&gt;</span></span>
+                            <span class="alternatingText-word word2"> Musician<span class="tags">&lt;/H1&gt;</span></span>
+                            <span class="alternatingText-word word3"> DJ<span class="tags">&lt;/H1&gt</span></span>
+                            <span class="alternatingText-word word4"> Front-End Web Developer<span class="tags">&lt;/H1&gt;</span></span>
                         </p>
                     </h2>
                     <div class="skillList">
@@ -52,7 +52,7 @@
                         <p><span>{</span>Projects<span>}</span></p>
                         <p><span>{</span>Contact Me<span>}</span></p>
                     </div>
-                    <h3>Please Scroll to Explore!</h3>
+                    <h3><span class="tags">&lt;H2&gt;</span>Please Scroll to Explore!<span class="tags">&lt;H2/&gt;</span></h3>
                     </div>
                 </div>
             <div class="bodyWrapper">
@@ -60,21 +60,76 @@
                     <h2><span>{</span>About Me<span>}</span></h2>
                     <div class="aboutFlex">
                         <div class="about1">
-                            <img src="" alt="">
-                            <p>I am passionante creator, driven my love of crafing, refining and sharing my hard work with the world.  Before arriving at Front-End Web Development, I pursued a Music Composition Degree from Wilfred Laurier University.  Upon deciding to do so, I had to address the awkward stumbling block of not actually playing an instrument.  In the 9th grade I picked up piano and over the next four years went from total beginner to being admitted into one of the most competitive music programs in Canada.  After graduating I scored several short and feature length films and completed a mentorship with the Screen Composer's Guild of Canada.  Music is still a very big part of my life, and I have released several records with bands and as a solo electronic artist, including my latest EP on Italian label Basse-Cor.</p>
+                            <img class="me1" src="assets/me1.png" alt="Stephen Schooley">
+                            <div class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content"  src="assets/me1.png" alt="Stephen Schooley">
+                        </div>
+                            <p><span>&lt;p&gt;</span>I am passionante creator, driven my love of crafing, refining and sharing my hard work with the world.  Before arriving at Front-End Web Development, I pursued a Music Composition Degree from Wilfred Laurier University.  Upon deciding to do so, I had to address the awkward stumbling block of not actually playing an instrument.  In the 9th grade I picked up piano and over the next four years went from total beginner to being admitted into one of the most competitive music programs in Canada.  After graduating I scored several short and feature length films and completed a mentorship with the Screen Composer's Guild of Canada.  Music is still a very big part of my life, and I have released several records with bands and as a solo electronic artist, including my latest EP on Italian label Basse-Cor.<span>&lt;/p&gt;</span></p>
                         </div>
                         <div class="about2">
-                            <p>In my work life, I have excelled by using my analytical skills, technical acumen and creative problem solving.  I have quickly ascended in my previous work places to roles of organization, advanced troubleshooting and coordinating team work.  I have taken immense satisfaction in solving unique and challenging problem in order to help co-workers and clients alike, and I am excited to pursue that meaningfullness in all future oppourtunities.</p>
-                            <p>Coding has been a relevation in my life.  It encapsulates so many of the things I have found gratifying in my personal and professional life.  I have taken to learning to code with the same drive and thirst for knowledge I did when I decided to learn piano.  I have learned practical and cutting edge techniques through the Juno College of Technology Bootcamp, as well as community driven skills like peer programming and the ability to communicate about my code.  I am beyond excited to start combining the quick-learning, creativity and ambition I bring to all my persuits with the technical thinking and myriad of industry standard techniques I have absorbed to a new role.</p>
+                            <p><span>&lt;p&gt;</span>In my work life, I have excelled by using my analytical skills, technical acumen and creative problem solving.  I have quickly ascended in my previous work places to roles of organization, advanced troubleshooting and coordinating team work.  I have taken immense satisfaction in solving unique and challenging problem in order to help co-workers and clients alike, and I am excited to pursue that meaningfullness in all future oppourtunities.<span>&lt;/p&gt;</span></p>
+                            <p><span>&lt;p&gt;</span>Coding has been a relevation in my life.  It encapsulates so many of the things I have found gratifying in my personal and professional life.  I have taken to learning to code with the same drive and thirst for knowledge I did when I decided to learn piano.  I have learned practical and cutting edge techniques through the Juno College of Technology Bootcamp, as well as community driven skills like peer programming and the ability to communicate about my code.  I am beyond excited to start combining the quick-learning, creativity and ambition I bring to all my persuits with the technical thinking and myriad of industry standard techniques I have absorbed to a new role.<span>&lt;/p&gt;</span></p>
+                            <button>My Resume</button>
                         </div>
                     </div>
                 </div>
                 <div class="skills">
                     <h2><span>{</span>Skills<span>}</span></h2>
-                    <p>I am always learning and honing new skills.  My thirst for knowledge and the rewards of learning are some of my greatest strength (and occasionally my sleep schedules greatest weakness)</p>
-                    <div class="skillImgs">
-                        <img >
-                    </div>
+                    <p>I am always learning and honing new skills.  My thirst for knowledge and the rewards of learning are some of my greatest strength (and occasionally my sleep schedules greatest weakness)...  I apply these skills in paired solo, paired program and agency style projects to create accesible, responsive and modern web design!</p>
+                    <ul class="skillImgs">
+                        <li>
+                            <i class="fab fa-html5"></i>
+                            <p>Html</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                            <p>Css</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-sass"></i>
+                            <p>Sass</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-js-square"></i>
+                            <p>JavaScript and jQuery</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-react"></i>
+                            <p>React</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-database"></i>
+                            <p>Firebase</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-circle-up"></i> 
+                            <p>Rest<span>ful</span> API</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <p>Git and Github</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-npm"></i>
+                            <p>NPM Libraries</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-codepen"></i>
+                            <p>Codepen</p>
+                        </li>
+                    </ul>
+                    <p class="now">What I'm Learning Now:</p>
+                    <ul class="skillImgs">
+                        <li>
+                            <i class="fab fa-angular"></i>
+                            <p>Angular</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-node-js"></i>    
+                            <p>Node JS</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="projects">
                     <h2><span>{</span>Projects<span>}</span></h2>
@@ -84,9 +139,7 @@
                         <button>Black Jack</button>
                         <button>Anywhere But Here</button>
                         <button>Something Else</button>
-
                     </div>
-
                 </div>
                 <div class="contact">
                     <h2>Contact</h2>
@@ -98,6 +151,7 @@
                     <p>schooley.sa@gmail.com</p>
                 </div>
             </div>
-        </div>        
+        </div>   
+        <script src="src/site.js"></script>     
 </body>
 </html>
