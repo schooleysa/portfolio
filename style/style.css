@@ -13,11 +13,20 @@ html {
 }
 
 body {
-    background-color: #2a2a2a;
+    background-color: #1e1e1e;
 }
 
 a {
     color: white;
+}
+
+.bImg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/vsCodeBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 50px 50px #1e1e1e inset;
 }
 
 .bColor {
@@ -52,11 +61,14 @@ a {
     font-weight: 00;
     flex-shrink: 10;
     animation-name: bOpacity;
-    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
+    opacity: 0;
 }
 
 .title h1 {
@@ -72,7 +84,7 @@ h1 span {
 }
 
 .title h2 {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     margin-top: 0;
     font-weight: 500;
 }
@@ -84,7 +96,7 @@ h1 span {
 
 .title h3 {
     color: #ed6147;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 100px;
     margin-top: 40px;
 }
@@ -175,6 +187,7 @@ h1 span {
     flex-direction: column;
     margin-bottom: 100px;
     flex-shrink: 1;
+    font-family: 'Inconsolata', monospace;
 }
 
 
@@ -195,14 +208,12 @@ h1 span {
     justify-content: center;
     align-items: center;
     border-radius: 50% 0 50% 0;
-    animation-name: letter;
-    animation-duration: 4s;
     position: relative;
 }
 
 .letter p {
     font-family: 'Raleway', sans-serif;
-    color: #2a2a2a;
+    color: #1e1e1e;
     opacity: 1;
     animation-name: opacity;
     animation-duration: 6s;
@@ -220,7 +231,8 @@ h1 span {
 
 .about,
 .projects,
-.skills {
+.skills,
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,9 +241,17 @@ h1 span {
     font-family: 'Inconsolata', monospace;
 }
 
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
 .about h2 {
     color: #dc78dc;
-    font-size: 2rem;
 }
 
 .about p {
@@ -263,6 +283,7 @@ h1 span {
     height: auto;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -311,7 +332,7 @@ h1 span {
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bold; 
     transition: 0.3s;
   }
   
@@ -326,16 +347,20 @@ h1 span {
     margin-bottom: 100px;
 }
 
+.about a {
+    text-decoration: none;
+    color: #dc78dc;
+}
+
 .skills h2 {
     color: #dfeb7a;
-    font-size: 2rem;
 }
 
 button {
     width: 25%;
     border: none;
     font-size: 0.7rem;
-    color: #2a2a2a;
+    color: #1e1e1e;
     font-weight: lighter;
     padding: 10px 15px;
 }
@@ -343,8 +368,10 @@ button {
 .about2 button {
     font-family: 'Raleway', sans-serif;
     margin-top: 40px;
-    width: 30%;
+    width: 100%;
     padding: 20px 25px;
+    background-color: #ed6147;
+    color: white;
     border-radius: 5px;
     font-size: 1rem;
     box-shadow: -7px -7px #dfeb7a, 
@@ -353,8 +380,8 @@ button {
 
 .about2 button:hover {
     margin-top: 40px;
-    color: white;
-    background-color: #11d0b7;
+    color: #1e1e1e;
+    background-color: white;
 } 
 
 .skills span {
@@ -364,7 +391,7 @@ button {
 
 .skillImgs {
     display: flex;
-    max-width: 75%;
+    max-width: 70%;
     padding: 0;
     list-style: none;
     text-transform: uppercase;
@@ -379,6 +406,7 @@ button {
 i {
     font-size: 50px;
     height: auto;
+    color: white;
 }
 
 li {
@@ -393,15 +421,18 @@ li {
 
 .skillImgs p {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .now {
-    color: #dc78dc;  
+    color: #dc78dc;
+    font-size: 1.2rem;
 }
 
 .projects h2 {
     color: #11d0b7;
-    font-size: 2rem;
 }
 
 .projects span {
@@ -419,9 +450,74 @@ button {
     border: none;
     font-family: 'Raleway', sans-serif;
     font-size: 0.7rem;
-    color: #2a2a2a;
+    color: #1e1e1e;
     font-weight: lighter;
     padding: 10px 15px;
+}
+
+.containerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: flex;
+}
+
+.projectContainer2 {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+}
+
+.projectImg,
+.projectText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    max-height: 350px;
+    background-color: #f0ecec;
+}
+
+.projects a {
+    text-decoration: none;
+    color:  #dc78dc
+}
+
+.projectText a {
+    color:  #ed6147;
+}
+
+.projectImg {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 0 20px;
+}
+
+.projectImg img {
+    max-width: 500px;
+    height: auto;
+}
+
+.projectText {
+    padding: 20px;
+    border-radius: 0 20px 0 20px;
+}
+
+.projectText h3 {
+    margin: 0;
 }
 
 .projectButtons .selected {
@@ -429,22 +525,147 @@ button {
     background-color: #11d0b7;
 }
 
-.contactImg {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+.projectDec1,
+.projectDec2 {
+    width: 200px;
+    height: 200px;
+    background-size: 300px;
+
 }
 
+.projectDec1 {
+    border-radius: 0 20px 0 0;
+    margin-top: 127px;
+    background-image: url(../assets/vsCodeBackground1.png);
+}
 
-i {
+.projectDec2 {
+    border-radius: 0 0 0 20px;
+    background-image: url(../assets/vsCodeBackground2.png);
+}
+
+.contactContainer {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    color:  #ed6147;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.contactSubHeader {
+ font-size: 0.8rem;
+}
+
+.contact p {
+    color: #11d0b7;
+}
+
+.contact span {
+    color: #11d0b7;
+}
+
+.contactForm {
+    width: 65%;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+}
+
+input,
+textarea {
+    font-family: 'Raleway', sans-serif;
+    color: #11d0b7;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 100%;
+}
+
+input {
+    border: none;
+}
+
+textarea {
+    height: 200px;
+}
+
+::placeholder {
+    color: #11d0b7;
+}
+
+.contactForm form button {
+    background-color: #11d0b7;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    width: 150px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 12px 5px;
+}
+
+.contactMethod {
+    width: 35%;
+    padding-left: 20px;
+}
+
+.contactMethod p {
+    margin-top: 0;
+}
+
+.contactInfo {
+    padding: 0;
+}
+
+.contactInfo p {
+    color: #6a6a6a;
+    font-size: 18px;
+}
+
+.contactInfo i {
+    font-size: 18px;
+    color: #ed6147;
+    display: inline;
+}
+
+.contactImg {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #ed6147;
+}
+
+.contactImg li {
+    width: 40px;
+    height: auto;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.contactImg i {
+    font-size: 40px;
+    color: #6a6a6a;
+}
+
+.contactImg i:hover {
     color: white;
 }
 
-i.fab.fa-linkedin::before {
-    width: 50px;
-    height: auto
-}
+/* NAME ANIMATION */
 
 @keyframes opacity {
     0% {opacity: 0;
@@ -901,5 +1122,289 @@ i.fab.fa-linkedin::before {
           background-color: #ed6147;
           border: 1px solid #2b0404
 ;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    
+    .title{
+        padding-left: 10px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .stephen {
+        width: 100%;
+    }
+
+    .first,
+    .last {
+        width: 75%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        margin-bottom: 0;
+    }
+
+    .alternatingText {
+        margin-top: 12px;
+    }
+
+    .skillList {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .title h2 {
+        margin-bottom: 20px;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .title p:nth-of-type(1) {
+        margin-top: 24px;
+    }
+
+    .title h3 {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .about button {
+        margin-top: 25px
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .skillList {
+        display: flex;
+        width: 80%;
+    }
+
+    .aboutFlex{
+        flex-direction: column;
+    }
+
+    .about1,
+    .about2 {
+        width: 100%;
+    }
+
+    .contactContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .projectsSubHeader{
+        font-size: 0.9rem
+    }
+
+    .contactContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 875px) {
+    
+.projectButtons {
+    width: 75%;
+}
+}
+
+@media (max-width: 800px) {
+    .first,
+    .last {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .skillList {
+        width: 100%;
+    }
+
+    .letter p {
+        font-size: 2.7rem;
+    }
+
+    .projectDec1,
+    .projectDec2 {
+        display: none;
+    }
+
+    .contactContainer {
+        flex-direction: column-reverse;
+    }
+
+    .contactMethod {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .break {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .stephen {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter p {
+        font-size: 2.2rem;
+    }
+
+    .title .skillList p {
+        font-size: 1rem;
+    }
+
+    .title p:nth-of-type(1) {
+        margin-top: 20px;
+    }
+
+    .projectButtons {
+        width: 100%;
+    }
+}
+
+@media (max-width: 577px) {
+
+    .stephen {
+        margin-top: 50px;
+    }
+
+    .letter {
+        height: 75px;
+        margin: 2px;
+    }
+
+    .letter p {
+        font-size: 2rem;
+    }
+
+    .projectImg {
+        border-radius: 20px 20px 0 0;
+    }
+    .projectText {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    
+    .stephen {
+        margin-top: 10px;
+    }
+
+    .title h2 {
+        font-size: 1.2rem;
+    }
+
+    .skillList {
+        flex-direction: column;
+    }
+
+    .title .skillList p {
+        font-size: 0.8rem;
+    }
+
+    .title p:nth-of-type(1) {
+        margin-top: 16px;
+    }
+
+    .projectImg img {
+        max-width: 400px;
+    }
+    .projectText {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .title h1,
+    .title h1 span {
+        font-size: 1.6rem;
+    }
+
+    .letter p {
+        font-size: 2rem;
+    }
+
+    .projectImg img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .title h1,
+    .title h1 span{
+        font-size: 1.3rem;
+    }
+
+    .letter p {
+        font-size: 1.6rem;
+    }
+
+    .projectImg img {
+        max-width: 325px;
+    }
+    .projects button {
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+}
+
+@media (max-width: 370px) {
+    
+    .title h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .letter p {
+        font-size: 1.3rem;
+    }
+
+    .projectImg img {
+        max-width: 290px;
+    }
+
+    .projects button {
+        font-size: 0.6rem;
     }
 }
