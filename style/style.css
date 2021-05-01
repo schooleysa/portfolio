@@ -312,7 +312,7 @@ h1 span {
 .modal-content {
     margin: auto;
     display: block;
-    width: 100%;
+    width: 200%;
     max-width: 700px;
 }
 
@@ -356,30 +356,20 @@ h1 span {
     color: #dfeb7a;
 }
 
-button {
-    width: 25%;
-    border: none;
-    font-size: 0.7rem;
-    color: #1e1e1e;
-    font-weight: lighter;
-    padding: 10px 15px;
-}
-
+.contactForm form button,
 .about2 button {
-    font-family: 'Raleway', sans-serif;
     margin-top: 40px;
-    width: 100%;
-    padding: 20px 25px;
-    background-color: #ed6147;
+    background-color: #11d0b7;
+    font-family: 'Raleway', sans-serif;
     color: white;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-shadow: -7px -7px #dfeb7a, 
-    -14px -14px #11d0b7;
+    width: 150px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 12px 5px;
 }
 
 .about2 button:hover {
-    margin-top: 40px;
     color: #1e1e1e;
     background-color: white;
 } 
@@ -446,7 +436,7 @@ li {
 }
 
 button {
-    width: 25%;
+    width: calc(100% / 3);
     border: none;
     font-family: 'Raleway', sans-serif;
     font-size: 0.7rem;
@@ -604,14 +594,7 @@ textarea {
 }
 
 .contactForm form button {
-    background-color: #11d0b7;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    width: 150px;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: lighter;
-    padding: 12px 5px;
+    margin-top: 0px;
 }
 
 .contactMethod {
@@ -1369,9 +1352,20 @@ textarea {
 
 @media (max-width: 400px) {
 
+    .wrapper {
+
+        width: 95%;
+    }
+
     .title h1,
     .title h1 span{
         font-size: 1.3rem;
+    }
+
+    .title h3,
+    .title h3 span {
+
+        font-size: 1rem;        
     }
 
     .letter p {
@@ -1388,13 +1382,19 @@ textarea {
 }
 
 @media (max-width: 370px) {
-    
+
     .title h2 {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 350px) {
+
+    .title h3,
+    .title h3 span {
+
+        font-size: 0.8rem;        
+    }
 
     .letter p {
         font-size: 1.3rem;
@@ -1406,5 +1406,29 @@ textarea {
 
     .projects button {
         font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 325px) {
+    
+    .title h1,
+    .title h1 span{
+        font-size: 1.1rem;
+    }
+    
+    .title h2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 275px) {
+
+    .title h1,
+    .title h1 span{
+        font-size: 1rem;
+    }
+
+    .title h2 {
+        margin-bottom: 40px;
     }
 }
