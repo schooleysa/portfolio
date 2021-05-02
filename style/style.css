@@ -1235,6 +1235,21 @@ textarea {
         display: none;
     }
 
+    .projectImg {
+        border-radius: 20px 20px 0 0;
+    }
+    .projectText {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .projectContainer {
+        justify-content: center;
+    }
+
+    .projectContainer2 {
+        justify-content: center;
+    }
+
     .contactContainer {
         flex-direction: column-reverse;
     }
@@ -1254,6 +1269,15 @@ textarea {
 
     .break {
         display: block;
+    }
+
+    .wrapper {
+        flex-direction: column-reverse;
+        justify-content: center
+    }
+
+    .stephen {
+        margin-bottom: 200px;
     }
 }
 
@@ -1294,13 +1318,6 @@ textarea {
 
     .letter p {
         font-size: 2rem;
-    }
-
-    .projectImg {
-        border-radius: 20px 20px 0 0;
-    }
-    .projectText {
-        border-radius: 0 0 20px 20px;
     }
 }
 
