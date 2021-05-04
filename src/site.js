@@ -72,20 +72,11 @@ portfolio.aboutMeModal = () => {
     image.onclick = () => {
         modal.style.display = "block";
         modalImg.src = this.src;
-        const span = document.querySelector(".close");
+    }
+    const span = document.querySelector(".close");
         span.onclick = function() {
-            modal.style.display = "none";
-            }
-        }
-
-    image.onkeydown = () => {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        const span = document.querySelector(".close");
-            span.onkeydown = function() {
-            modal.style.display = "none";
-            }
-        }
+        modal.style.display = "none";
+    }
 }
 
 portfolio.init = () => {   
