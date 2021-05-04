@@ -44,8 +44,25 @@ a {
     100%{opacity: 1;}
 }
 
+a,
+button,
+.skillList p {
+    cursor: pointer;
+}
+
+a:focus,
+button:focus,
+.skillList p:focus {
+    color: #ed6147;
+    text-decoration: underline;
+}
+
+.contactImg i:focus {
+    color: white;
+}
+
 .wrapper {
-    max-width: 1400;
+    max-width: 1400px;
     margin: 0 auto;
     width: 90%;
     height: 100vh;
@@ -435,6 +452,11 @@ li {
     width: 50%;
 }
 
+.projectButtons button:hover {
+    color: white;
+    background-color: #11d0b7;
+}
+
 button {
     width: calc(100% / 3);
     border: none;
@@ -480,12 +502,17 @@ button {
 }
 
 .projects a {
+    color:  #dc78dc;
     text-decoration: none;
-    color:  #dc78dc
+}
+
+.projectText {
+    color:  #2b0404;
 }
 
 .projectText a {
-    color:  #ed6147;
+    color:  #2b0404;
+    text-decoration: underline;
 }
 
 .projectImg {
