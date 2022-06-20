@@ -49,19 +49,19 @@ portfolio.projectButtons = () => {
     blackJack.addEventListener("click", () => {
         portfolio.addSelected(blackJack)
         portfolio.removeSelected(filmRecs, anywhere)
-        projectImg.innerHTML=`<img src="./assets/blackJackMockup2.png" alt="Black Jack App Mockup on mobile and laptop">`
+        projectImg.innerHTML=`<img src="./assets/GitGood.png" alt="Black Jack App Mockup on mobile and laptop">`
         projectText.innerHTML=`<h3>Black Jack</h3>
         <p>Fully playable game of Black Jack built on RESTful API calls.  Dealer logic written in vanilla JavaScript.  Try your luck!  Hit on fifteen!  Live a little!</p>
-        <a href="https://quirky-noyce-c630fa.netlify.app/">Click to Try!</a>`
+        <a target="_blank" href="https://quirky-noyce-c630fa.netlify.app/">Click to Try!</a>`
     })
 
     anywhere.addEventListener("click", () => {
         portfolio.addSelected(anywhere)
         portfolio.removeSelected(filmRecs, blackJack)
         projectImg.innerHTML=`<img src="./assets/anywhereMockup2.png" alt="Anywhere But Here Mockup on mobile and laptop">`
-        projectText.innerHTML=`<h3>Anywhere But Here</h3>
-        <p>It's been a year of Covid.  Your home office makes you tired and sad to look at.  You are ready to be somewhere, anywhere, but your house.  Use this React App, built using hooks and 5 different mapQuest API's to find somewhere (literally ANYWHERE) to go.</p>
-        <a href="https://quizzical-wescoff-cb58e4.netlify.app/">Click to Try!</a>`
+        projectText.innerHTML=`<h3>Git Good</h3>
+        <p>Search GitHub Profiles and link to all public Repos.  Built with React, Bootstrap and the GitHub Api</p>
+        <a target="_blank" href="https://jazzy-otter-40b8ec.netlify.app/">Click to Try!</a>`
     })
 }
 
