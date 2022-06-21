@@ -58,7 +58,7 @@ portfolio.projectButtons = () => {
     anywhere.addEventListener("click", () => {
         portfolio.addSelected(anywhere)
         portfolio.removeSelected(filmRecs, blackJack)
-        projectImg.innerHTML=`<img src="./assets/anywhereMockup2.png" alt="Anywhere But Here Mockup on mobile and laptop">`
+        projectImg.innerHTML=`<img src="./assets/GitGood.png" alt="Anywhere But Here Mockup on mobile and laptop">`
         projectText.innerHTML=`<h3>Git Good</h3>
         <p>Search GitHub Profiles and link to all public Repos.  Built with React, Bootstrap and the GitHub Api</p>
         <a target="_blank" href="https://jazzy-otter-40b8ec.netlify.app/">Click to Try!</a>`
