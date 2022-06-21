@@ -49,7 +49,7 @@ portfolio.projectButtons = () => {
     blackJack.addEventListener("click", () => {
         portfolio.addSelected(blackJack)
         portfolio.removeSelected(filmRecs, anywhere)
-        projectImg.innerHTML=`<img src="./assets/GitGood.png" alt="Black Jack App Mockup on mobile and laptop">`
+        projectImg.innerHTML=`<img src="./assets/blackJackMockup2.png" alt="Black Jack App Mockup on mobile and laptop">`
         projectText.innerHTML=`<h3>Black Jack</h3>
         <p>Fully playable game of Black Jack built on RESTful API calls.  Dealer logic written in vanilla JavaScript.  Try your luck!  Hit on fifteen!  Live a little!</p>
         <a target="_blank" href="https://quirky-noyce-c630fa.netlify.app/">Click to Try!</a>`
@@ -58,7 +58,7 @@ portfolio.projectButtons = () => {
     anywhere.addEventListener("click", () => {
         portfolio.addSelected(anywhere)
         portfolio.removeSelected(filmRecs, blackJack)
-        projectImg.innerHTML=`<img src="./assets/GitGood.png" alt="Anywhere But Here Mockup on mobile and laptop">`
+        projectImg.innerHTML=`<img src="./assets/GitGood.png" alt="GitGood App">`
         projectText.innerHTML=`<h3>Git Good</h3>
         <p>Search GitHub Profiles and link to all public Repos.  Built with React, Bootstrap and the GitHub Api</p>
         <a target="_blank" href="https://jazzy-otter-40b8ec.netlify.app/">Click to Try!</a>`
